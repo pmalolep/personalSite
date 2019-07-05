@@ -1,0 +1,186 @@
+<!--
+  python36 -m http.server
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Peter Malolepszy - Software Developer</title>
+    <style>
+      body {
+        font-size: 1.5em;
+      }
+      .page {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style: none;
+
+        background: #222;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: column wrap;
+      }
+      .section {
+        padding: 0;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin: 0;
+        height: 250px; /* trouble when screen shrinks*/
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        justify-content: center;
+      }
+      .right-section {
+        background-image: linear-gradient(
+          to right,
+          rgb(160, 208, 240),
+          rgb(135, 231, 126)
+        );
+        justify-content: right;
+        padding-right: 10%;
+      }
+      .left-section {
+        background-image: linear-gradient(
+          to left,
+          rgb(160, 208, 240),
+          rgb(135, 231, 126)
+        );
+        justify-content: left;
+        padding-left: 10%;
+      }
+      .item {
+        padding: 0;
+        margin: 0;
+
+        justify-content: start;
+        display: flex;
+        -webkit-flex-flow: column wrap;
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0;
+        white-space: nowrap;
+      }
+      #header {
+        background-image: linear-gradient(
+          to right,
+          #f85e46,
+          rgb(216, 159, 52),
+          rgb(255, 255, 255)
+        );
+        background-repeat: no-repeat;
+        color: white;
+      }
+      .title {
+        line-height: 125px;
+      }
+
+      #face {
+        border-radius: 25%;
+        border: solid black 3px;
+        vertical-align: middle;
+        height: 8em;
+        width: 8em;
+        margin: 2%;
+      }
+      #school-logo {
+        border-radius: 50%;
+        border: solid purple 10px;
+        vertical-align: middle;
+        height: 7em;
+        width: 7em;
+        margin: 2%;
+      }
+      #work-logo {
+        border-radius: 50%;
+        border: solid black 5px;
+        vertical-align: middle;
+        height: 7em;
+        width: 7em;
+        margin: 2%;
+      }
+      .project-logo {
+        border-radius: 50%;
+        border: solid black 5px;
+        vertical-align: middle;
+        height: 7em;
+        width: 7em;
+        margin: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="page">
+      <li id="header" class="section left-section">
+        <img id="face" src="/img/face2.png" class="item" />
+        <div class="item">
+          <h1 class="item title">
+            Peter Malolepszy
+          </h1>
+          <p class="item">Yes, this is Peter.</p>
+        </div>
+      </li>
+      <li id="education" class="section right-section">
+        <div class="item vertical-align">
+          <h1 class="item title">San Francisco State University</h1>
+          <h2 class="item">Bachelor of Science in Computer Science</h2>
+          <p class="item">Was fun. Might do it again.</p>
+        </div>
+        <img id="school-logo" src="/img/sfsu.png" class="item" />
+      </li>
+      <li id="experience" class="section left-section">
+        <img id="work-logo" src="/img/via.jpg" class="item" />
+        <div class="item vertical-align">
+          <h1 class="item title">Via Center School, Berkeley</h1>
+          <h2 class="item">Instructional Assistant</h2>
+          <p class="item">Was fun. Might do it again.</p>
+        </div>
+      </li>
+      <li id="project1" class="section right-section">
+        <div class="item vertical-align">
+          <h1 class="item title">Project: Hush Hush</h1>
+          <h2 class="item">M.E.R.N. stack</h2>
+          <p class="item">File share service, timed, limited, and encrypted.</p>
+        </div>
+        <img id="p1-logo" src="/img/hushhush.jpg" class="item project-logo" />
+      </li>
+      <li id="project2" class="section left-section">
+        <img
+          id="p2-logo"
+          src="/img/gatortrader.jpg"
+          class="item project-logo"
+        />
+        <div class="item vertical-align">
+          <h1 class="item title">Project: Gator Trader</h1>
+          <h2 class="item">Node Express app</h2>
+          <p class="item">Community Marketplace</p>
+        </div>
+      </li>
+      <li id="project3" class="section right-section">
+        <div class="item vertical-align">
+          <h1 class="item title">Project: TankGame</h1>
+          <h2 class="item">Java app</h2>
+          <p class="item">Two Player Tank Game</p>
+        </div>
+        <img id="p3-logo" src="/img/tankgame.jpg" class="item project-logo" />
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,460 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Peter Malolepszy | Software Developer</title>
+    <style>
+        #hold-this-for-me {
+            color: #ffffff;
+            color: #3b444b;
+            color: #0070b7;
+            color: #bdbdbd;
+            color: #fecc27;
+            color: #000000;
+            color: #7a8289;
+            color: #2abe69;
+            color: #4dbae6;
+            color: #d86d42;
+        }
+        
+        body {
+            /* font-size: 1em; */
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: #0b9446;
+            /* color: #2abe69; */
+            /* filter: drop-shadow( 0px 0px 10px rgb(173, 4, 179)); */
+        }
+        
+        a {
+            color: inherit;
+            font-weight: inherit;
+        }
+        
+        h3 {
+            font-weight: inherit;
+            font-size: 1.4em;
+        }
+        
+        pre {
+            font-size: 1.2em;
+        }
+        
+        #page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+        
+        #header {
+            margin: 30px;
+            margin-left: 60px;
+            margin-bottom: 60px;
+            font-size: 1.2em;
+            color: #fecc27
+        }
+        
+        #header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        
+        #introduction {
+            font-size: 1.5em;
+            margin: 30px;
+            padding-left: 10px;
+            margin-left: 60px;
+            min-height: 7.8em;
+        }
+        
+        #school {
+            min-height: 6.5em;
+        }
+        
+        #code-block {
+            filter: blur(2px);
+            color: #d86d42;
+            /* text-align: right; */
+            position: absolute;
+            bottom: 1em;
+            /* top: 0; */
+            /* right: 0; */
+            left: -40px;
+            z-index: -1;
+            width: 100%;
+            overflow: hidden;
+            transform: scaleX(-1);
+            word-wrap: none;
+        }
+        
+        #courses {
+            min-height: 11em;
+            max-width: 375px;
+        }
+        
+        .cursor {
+            /* color: lime; */
+            animation: blinkingText 0.6s infinite;
+        }
+        
+        .blinking {
+            animation: blinkingText 0.6s infinite;
+        }
+        
+        @keyframes blinkingText {
+            0% {
+                color: inherit;
+                /* color: transparent; */
+            }
+            49% {
+                /* color: rgb(255, 145, 0); */
+                /* color: transparent; */
+                /* display: none; */
+            }
+            50% {
+                /* color: transparent; */
+                /* display: none; */
+            }
+            99% {
+                /* color: transparent; */
+                /* display: none; */
+            }
+            100% {
+                /* color: rgb(255, 145, 0); */
+                color: transparent;
+                /* display: initial; */
+            }
+        }
+        
+        .section {
+            margin: 30px;
+            padding-left: 10px;
+            margin-left: 60px;
+        }
+        
+        .hh-typer,
+        .tg-typer,
+        .gt-typer {
+            min-height: 2.5em;
+        }
+        
+        .blue-block {
+            color: #4dbae6;
+            margin: 30px;
+            margin-left: 60px;
+            padding-left: 10px;
+            max-width: 500px;
+            border-left: dotted 3px #4dbae6;
+            text-align: justify;
+        }
+        
+        .gold-block {
+            color: #fecc27;
+            text-align: center;
+            /* font-size: 1em; */
+            margin: 30px;
+            margin-left: 60px;
+            padding: 20px;
+            padding-right: 0;
+            border-top: dashed 1px #fecc27;
+        }
+        
+        .white-block {
+            color: #bdbdbd;
+            /* font-size: 1em; */
+            margin: 30px;
+            padding-left: 10px;
+            max-width: 500px;
+            margin-left: 60px;
+            border-left: dotted 3px #bdbdbd;
+            text-align: justify;
+            white-space: pre-wrap;
+        }
+        
+        .project-image {
+            max-width: 200px;
+            /* height: 125px; */
+            border-left: dashed 1px #fecc27;
+            border-right: dashed 1px #fecc27;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            body {
+                font-size: .75em;
+                /* width: 100%; */
+            }
+            #header {
+                font-size: initial;
+                margin: 0vw;
+                padding: 5vw;
+            }
+            #header h1 {
+                font-size: 1.5em;
+                /* min-height: 3em; */
+                line-height: initial;
+            }
+            #introduction {
+                margin: 0;
+                min-height: 9em;
+            }
+            .section {
+                margin: 5vw;
+                padding: 0;
+            }
+            .white-block {
+                /* margin-left: 3vw; */
+                margin: 0;
+                margin-bottom: 3vw;
+                font-size: initial;
+                padding-left: 3vw;
+            }
+            .blue-block {
+                margin: 0;
+                margin-bottom: 5vw;
+                padding-left: 3vw;
+            }
+            .gold-block {
+                margin: 0;
+                margin-top: 5vw;
+                padding: 0;
+                padding-top: 5vw;
+                font-size: initial;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <pre id="code-block">
+	</pre>
+    <div id="page">
+        <div id="header">
+            <p>
+                <p>Hello, it is I</p>
+            </p>
+            <p>
+                <h1 id="me" class="typer">Peter Malolepszy</h1>
+            </p>
+            <p>Software Developer Extraordinaire</p>
+        </div>
+        <div id="introduction" class="section">
+            <pre class="typer white-block">I'm a programmer, or at least I enjoy programming.
+
+I like trying new things and learning new technologies. I've been tackling some Node and React projects recently, and working in java and python for fun.</pre>
+        </div>
+        <div id="school" class="section">
+            <h2> Where did you go to school?</h2>
+            <div class="blue-block">
+                <p>San Francisco State University.
+                    <br/>Graduated with a Bachelors of Science in Computer Science
+                    <br/>Fall 2015 - Fall 2018
+                    <br/>3.49 GPA<span class="cursor">_</span></p>
+            </div>
+            <h2>What relevant course work did you complete?</h2>
+            <p class="blue-block">I took a broad-spectrum of courses. The majority of it was in Java and c++ with later courses focued on development process and usability. I did my best to expand my abilities in the time I had, and I'm still expanding on my own time. I'll
+                list some of my completed courses here</p>
+            <pre class="gold-block" id="courses">* Software Development
+* Operating System Principles
+* Web Application Development
+* IOS App Development
+* Programming Languages
+* Analysis of Algorithms
+* Data Structures
+* Technical Writing
+* Elementary Education: Art and Learning</pre>
+        </div>
+        <div id="experience" class="section">
+            <h2>What kind of work experience do you have?</h2>
+            <p class="blue-block">
+                I worked as an Instructional Assistant at a Via Center School in Berkeley
+                <br/> Feb. 2012 to Aug. 2015
+            </p>
+            <p class="blue-block">I taught intellectually disabled children and young adults, instructing them in academic lessons and life skills to better prepare them for life without assistance. Worked regularly with 4 students, 35 hours a week, and was praised as being
+                a great influence on both their academics and behavior.
+            </p>
+            <p class="blue-block">
+                I worked a number of retail positions before that, just barely managing to scrape by every month. Once I managed to save enough money I made the decision to better myself with education.
+            </p>
+            <p class="blue-block">
+                I've taken time off working to focus on education and the pursuit of gainful employment in a different field.<span class="cursor">_</span>
+                <span class="cursor">_</span>
+            </p>
+        </div>
+        <div id="projects" class="section">
+            <h2>Do you have any work samples or projects to show off?</h2>
+            <p class="blue-block">oh absolutely<span class="cursor">_</span></p>
+
+            <div class="gold-block project">
+                <h3><a class='hh-typer' target="_blank" href='http://hush-hush.herokuapp.com/'>Hush-Hush</a></h3>
+                <a id='hh' target="_blank" href='http://hush-hush.herokuapp.com/'><img src="img/hushhush.png" class='project-image' /></a>
+                <p class='hh-typer'>Password encrypted file share Service</p>
+                <p class='hh-typer'>-- Node -- React -- MongoDB --</p>
+                <p>Made by <a class='hh-typer' target="_blank" href="https://www.linkedin.com/in/andrew-patterson-65a158110/">Andrew Patterson</a> and <a target="_blank" class='hh-typer' href="https://www.linkedin.com/in/pmalolep">Myself</a></p>
+                <p>Check out our <a class='hh-typer' target="_blank" href="https://github.com/andrewpat24/hushpass">Github</a></p>
+            </div>
+            <div class="gold-block project">
+                <h3><a class='gt-typer' target="_blank" href="https://se-csc648-fa18-section1-team02.herokuapp.com/home">Gator Trader</a></h3>
+                <a id='gt' target="_blank" href="https://se-csc648-fa18-section1-team02.herokuapp.com/home"><img src="img/gatortrader.png" class='project-image' /></a>
+                <p class='gt-typer'>-- Node -- Express -- Postgress --</p>
+                <p class='gt-typer'>Community Marketplace for buying and selling school life essentials</p>
+                <p>Made by a <a class='gt-typer' target="_blank" href='https://se-csc648-fa18-section1-team02.herokuapp.com/about'>great team of people</a></p>
+                <p>Check out our <a class='gt-typer' target="_blank" href="https://github.com/pmalolep/csc648-fa18-Team02">Github</a></p>
+            </div>
+            <div class="gold-block project">
+                <h3 class='tg-typer'>Tank Game</h3>
+                <img id='tg' src="img/tankgame.png" class='project-image' />
+                <p class='tg-typer'>-- Java -- </p>
+                <p class='tg-typer'>A 1 versus 1 tank battle, with sound, music, and animations</p>
+                <p class='tg-typer'>Made by Ben Mayer and Myself</p>
+                <p>Check out my <a class='tg-typer' target="_blank" href="https://github.com/pmalolep/tankgame">Github</a></p>
+
+            </div>
+        </div>
+        <div class='section' id='contact'>
+            <h2>We like what we see, so how do we get in touch?</h2>
+            <p class='white-block'>Message me on <a target='_blank' href='https://www.linkedin.com/in/pmalolep'>LinkedIn</a></p>
+            <p class='white-block'>Check out my <a target='_blank' href='https://www.github.com/pmalolep'>GitHub</a></p>
+            <p class='white-block'>Email me at <a style='text-decoration: underline'>PeterJMalolepszy@gmail.com</a></p>
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    // const codeText = 'System.out.println("Hello, World!");<br/>System.out.println("Hello, World!");';
+    // const codeText = "System.out.println(\"Hello, World!\");\n\tSystem.out.println(\"Hello, World!\");\n\t\tSystem.out.println(\"Hello, World!\");\n\t\t\tSystem.out.println(\"Hello, World!\");\n\t\t\t\tSystem.out.println(\"Hello, World!\");\n";
+
+    const url = 'https://raw.githubusercontent.com/pmalolep/tankgame/master/TankGame/src/tankgame/TankGame.java';
+    let codeContent = "System.out.println(\"Hello, World!\");";
+    let codeTyped = "";
+    let codeIndex = 180;
+    const codeTextSpeed = 25;
+
+    document.onload =
+        fetch(url).then((res) => {
+            res.text().then((text) => {
+                codeContent = text;
+                codeTyped = codeContent.slice(0, codeIndex);
+                codeTyper();
+            })
+        })
+
+    function codeTyper() {
+        // document.getElementById("code-block").style['display']='inherrit';
+
+        if (codeIndex < codeContent.length) {
+            codeTyped += codeContent[codeIndex];
+            document.getElementById("code-block").innerHTML = codeTyped + "<span id=\"cursor\" class=\"cursor blinking\">█</span>";
+            codeIndex++;
+            setTimeout(codeTyper, codeTextSpeed);
+        }
+    }
+
+    typeWriter();
+
+    function typeWriter() {
+        document.querySelectorAll('.typer').forEach((typerDiv) => {
+
+            const content = typerDiv.innerHTML;
+            let typedContent = "";
+            const typerSpeed = 15;
+            let index = 0;
+
+            typer();
+
+            function typer() {
+                if (index < content.length) {
+                    typedContent += content[index];
+                    typerDiv.innerHTML = typedContent + "<span class=\"cursor\">_</span>";
+                    index++;
+                    setTimeout(typer, typerSpeed);
+                }
+            }
+        });
+    }
+
+    function typeWriterThis(elm, cursorOption = true) {
+        const content = elm.innerHTML;
+        let typedContent = "";
+        const typerSpeed = 20;
+        let index = 0;
+
+        typer();
+
+        function typer() {
+            if (index < content.length) {
+                typedContent += content[index];
+                elm.innerHTML = cursorOption ? typedContent + "<span class=\"cursor\">_</span>" : typedContent;
+                index++;
+                setTimeout(typer, typerSpeed);
+            }
+        }
+    }
+
+
+    function checkVisible(elm, threshold, mode) {
+        threshold = threshold || 0;
+        mode = mode || 'visible';
+
+        var rect = elm.getBoundingClientRect();
+        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+        var above = rect.bottom - threshold < 0;
+        var below = rect.top - viewHeight + threshold >= 0;
+
+        return mode === 'above' ? above : (mode === 'below' ? below : !above && !below);
+    }
+
+    let coursesFlag = true;
+    let hhFlag = true;
+    let gtFlag = true;
+    let tgFlag = true;
+    document.getElementById('page').onscroll = () => {
+        if (coursesFlag) {
+            let above = checkVisible(document.getElementById('courses'), 100)
+            if (above) {
+                coursesFlag = false;
+                typeWriterThis(document.getElementById('courses'));
+            }
+        }
+        if (hhFlag) {
+            let above = checkVisible(document.getElementById('hh'), 100);
+            if (above) {
+                hhFlag = false;
+                document.querySelectorAll('.hh-typer').forEach((typerDiv) => {
+                    typeWriterThis(typerDiv, false);
+                });
+            }
+        }
+        if (gtFlag) {
+            let above = checkVisible(document.getElementById('gt'), 100);
+            if (above) {
+                gtFlag = false;
+                document.querySelectorAll('.gt-typer').forEach((typerDiv) => {
+                    typeWriterThis(typerDiv, false);
+                });
+            }
+        }
+        if (tgFlag) {
+            let above = checkVisible(document.getElementById('tg'), 100);
+            if (above) {
+                tgFlag = false;
+                document.querySelectorAll('.tg-typer').forEach((typerDiv) => {
+                    typeWriterThis(typerDiv, false);
+                });
+            }
+        }
+    }
+</script>
+
+</html>
